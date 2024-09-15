@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Memorizador de Meses </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <h1 style="font-size: 64px;"> Memorizador de Meses </h1>
+
+    <div style="text-align: center; font-size: 20px">
+        <p>Clique nos botões abaixo para memorizar os meses do ano.</p>
+        <div class="grid-container">
+            <button id="january" class="month-button font">Janeiro</button>
+            <button id="february" class="month-button font">Fevereiro</button>
+            <button id="march" class="month-button font">Março</button>
+            <button id="april" class="month-button font">Abril</button>
+            <button id="may" class="month-button font">Maio</button>
+            <button id="june" class="month-button font">Junho</button>
+            <button id="july" class="month-button font">Julho</button>
+            <button id="august" class="month-button font">Agosto</button>
+            <button id="september" class="month-button font">Setembro</button>
+            <button id="october" class="month-button font">Outubro</button>
+            <button id="november" class="month-button font">Novembro</button>
+            <button id="december" class="month-button font">Dezembro</button>   
+        </div>
+    </div>
+    
+
+    
+    <button class="botao"> Reiniciar</button>
+    <br/>
+    <br/>
+    
+    <button style="background-color: #7a7a7a; color: #ffffff; padding: 5px 10px; border-radius: 5px; font-size: 18px; "> Apresentar Meses </button>
+    <!-- Mostre todos os meses do ano em uma lista. -->
+
+    
+
+
+     <div class="botoes_modos_jogo ">
+        <button style="font-size: 25px; padding: 5px 10px; border-radius: 5px" id="btnMostrarModos">Mostrar Modos</button>
+        <div id="modosContainer" class="modos-container">
+            <button class = "modo" onclick="irParaPagina('modo1.html')">Quiz</button>
+            <!-- Crie um quiz com algumas perguntas sobre os meses do ano. 
+            Ex: "Qual é o mês com 31 dias?" - Ex: "Qual mês tem o Natal?"-->
+
+            <button class = "modo" onclick="irParaPagina('modo2.html')">Correspondência</button>
+            <!-- Mostre um mês de forma aleatória e peça ao usuário para selecionar o número 
+             correspondente. Por exemplo, se você mostrar "Março", o usuário deve escolher "3". -->|
+
+            <button class = "modo" onclick="irParaPagina('modo3.html')">Sequência de Meses</button>
+            <!-- Mostre um mês e peça ao usuário para digitar o mês que vem antes ou depois.-->
+
+        </div>
+     </div>
+     
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
