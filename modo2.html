@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correspondência</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 style="font-size: 64px;"> Correspondência </h1>
+    
+       <!-- Mostre todos os meses do ano em uma lista. -->
+
+       <div style="text-align: center; font-size: 20px"></div>
+        <p>Mostre um mês e peça ao usuário para digitar o mês que vem antes ou depois.</p>
+
+     <div class="botoes_modos_jogo ">
+        <button style="font-size: 25px; padding: 5px 10px; border-radius: 5px" id="btnMostrarModos">Mostrar Modos</button>
+        <div id="modosContainer" class="modos-container">
+
+            <button class = "modo" onclick="irParaPagina('modo1.html')">Quiz</button>
+            <!-- Mostre um mês de forma aleatória e peça ao usuário para selecionar o número 
+             correspondente. Por exemplo, se você mostrar "Março", o usuário deve escolher "3". -->|
+
+            <button class = "modo" onclick="irParaPagina('modo3.html')">Sequência de Meses</button>
+            <!-- Mostre um mês e peça ao usuário para digitar o mês que vem antes ou depois.-->
+
+            <button class = "modo" onclick="irParaPagina('index.html')">Memorizador de Meses</button>
+            <!-- Crie um quiz com algumas perguntas sobre os meses do ano. 
+            Ex: "Qual é o mês com 31 dias?" - Ex: "Qual mês tem o Natal?"-->
+
+        </div>
+     </div>
+
+     <script src="script.js"></script> 
+    
+</body>
+</html>

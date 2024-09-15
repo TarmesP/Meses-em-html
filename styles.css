@@ -69,12 +69,14 @@ body {
     bottom: 100%; /* Posiciona o contêiner de modos acima do botão principal (100% da altura do botão) */
     left: 0; /* Alinha o contêiner de modos com a borda esquerda do botão principal */
     background-color: white; /* Define a cor de fundo do contêiner de modos */
-    border: 1px solid #ccc; /* Adiciona uma borda ao redor do contêiner de modos */
-    padding: 10px; /* Adiciona espaço interno ao redor do conteúdo do contêiner de modos */
+    border: 2px solid #ccc; /* Adiciona uma borda ao redor do contêiner de modos */
+    padding: 20px; /* Adiciona espaço interno ao redor do conteúdo do contêiner de modos */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner de modos para destacá-lo */
-    font-size: 60px;
+    font-size: 0px;
 }
 
 .modo {
     margin: 5px 0; /* Adiciona espaço vertical entre os botões de modo */
 }
+
+

@@ -1,11 +1,43 @@
-const  MesesCorretos = [
-    "Janeiro", "Fevereiro", "Marco", "Abril", 
+const MesesCorretos = [
+    "Janeiro", "Fevereiro", "Março", "Abril", 
     "Maio", "Junho", "Julho", "Agosto", 
-    "Setembro", "Outubro", "Novembro", "Dezembro"
-]
+    "Setembro", "Outubro", "Novembro", "Dezembro"];
 
-let  OrdemUsuario = [];
 
+document.addEventListener("DOMContentLoaded", () => {
+    const meses = document.getElementById("meses");
+
+    meses.addEventListener("click", mes_selecionado =>{
+        if (event.target.tagName === "BUTTON") {
+            let mes = event.target.textContent;
+            OrdemUsuario.push(mes) 
+            console.log(OrdemUsuario)
+
+            if (OrdemUsuario.length === 12) {
+
+                if (JSON.stringify(OrdemUsuario) === JSON.stringify(MesesCorretos)) {
+                    alert("Parabéns! Você acertou a ordem dos meses.");
+                } else {
+                    alert("Ops! A ordem está errada.");
+                }
+                // Comparar os arrays
+            }
+        }
+    });
+});
+
+
+let  OrdemUsuario = []
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const Reiniciar = document.getElementById("Reiniciar");
+
+    Reiniciar.addEventListener("click", mes_selecionado =>{
+        OrdemUsuario = [];  
+        
+    });
+});
 
 // Ao clicar no mes errado ficar vermelho 
 // randomizar os meses 
@@ -24,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
 function irParaPagina(pagina) {
     window.location.href = pagina; // Redireciona para a página especificada
